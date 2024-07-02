@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Funciona?</h1>
+    <header>
+        <h1>Calculadora de mejor vendedor</h1>
+    </header>
+    <main>
+        <section class="opciones">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <h2>Ventas</h2>
+                <label for="aqua">Aqua:</label>
+                <input type="number" name="aqua" id="aqua" required>
+                <label for="emocion">Emoción:</label>
+                <input type="number" name="emocion" id="emocion" required>
+                <label for="alegria">Alegría:</label>
+                <input type="number" name="alegria" id="alegria" required>
+                <label for="frescura">Frescura:</label>
+                <input type="number" name="frescura" id="frescura" required>
+                <button type="button" onclick="agregarVendedor()">Agregar vendedor</button>
+            </form>
+            <button type="button" onclick="mejorVendedor()">Calcular mejor vendedor</button>
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
